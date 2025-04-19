@@ -62,5 +62,5 @@ app.post('/api/questions', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`https://quizapp-usingopenai-bk.onrender.com`);
+    console.log(`Server running at http://localhost:${PORT}`);
 });

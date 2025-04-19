@@ -1,9 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "https://quizapp-usingopenai-bk.onrender.com/api/$1"
-      }
-    ]
-  }
-  
