@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingDiv.classList.remove('hidden');
 
         try {
-            const response = await fetch('/api/questions', {
+            const response = await fetch('${process.env.REACT_APP_API_BACKEND}/api/questions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ topic })
