@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 6000;
 app.use(express.static('public'));
 app.use(express.json());
 
-app.post('https://quizapp-usingopenai-bk.onrender.com/api/questions', async (req, res) => {
+app.post('/api/questions', async (req, res) => {
     try {
         const { topic } = req.body;
 
